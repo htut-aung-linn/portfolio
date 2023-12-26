@@ -1,16 +1,17 @@
 :root {
-    --background-main-color: #1a1a1a; /* Dark background */
-    --background-second-color: #2b2b2b; /* Slightly lighter background */
-    --background-third-color: #3c3c3c; /* Another shade of gray */
-    --background-forth-color: #4d4d4d; /* Yet another shade of gray */
-    --main-font-color: #ffffff; /* White for main text */
-    --hover-color: #ff69b4; /* Hot pink for hover effects */
-    --havor-second-color: #ff1493; /* Deep pink */
+    --background-main-color: #f9f9f9; /* Very light gray for background */
+    --background-second-color: #ffffff; /* White background */
+    --background-third-color: #e0e0e0; /* Light gray background */
+    --background-forth-color: #d3d3d3; /* Another shade of gray */
+    --main-font-color: #333333; /* Dark gray for main text */
+    --hover-color: #3498db; /* Blue for hover effects */
+    --havor-second-color: #2980b9; /* Slightly darker blue */
     --font-size: 16px; /* Slightly larger font size for readability */
-    --border-color: #666; /* Medium gray for borders */
+    --border-color: #cccccc; /* Light gray for borders */
     --small-margin: 8px; /* Small margin for spacing */
-    --button-background-color: #008080; /* Teal for buttons */
+    --button-background-color: #3498db; /* Blue for buttons */
 }
+
 
 
 
