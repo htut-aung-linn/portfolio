@@ -29,7 +29,7 @@
 }
 
 .nave:hover{
-    border: solid 4px var(--hover-color);
+    border-bottom: solid 4px var(--hover-color);
 }
 
 .active{

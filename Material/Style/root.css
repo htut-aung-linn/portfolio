@@ -1,15 +1,15 @@
 :root {
-    --background-main-color: #111; /* Very dark gray for background */
-    --background-second-color: #222; /* Dark gray */
-    --background-third-color: #333; /* Slightly lighter gray */
-    --background-forth-color: #444; /* Lighter gray */
-    --main-font-color: #eee; /* Light gray for main text */
-    --hover-color: #ff4444; /* Dark red for hover effects */
-    --havor-second-color: #cc0000; /* Slightly lighter red */
+    --background-main-color: #ffffff; /* White background */
+    --background-second-color: #228B22; /* Forest green background */
+    --background-third-color: #FF0000; /* Red background */
+    --background-forth-color: #ffd700; /* Gold background */
+    --main-font-color: #333333; /* Dark gray for main text */
+    --hover-color: #b22222; /* Firebrick for hover effects */
+    --havor-second-color: #8b0000; /* Dark red */
     --font-size: 16px; /* Slightly larger font size for readability */
-    --border-color: #666; /* Medium gray for borders */
+    --border-color: #228B22; /* Forest green for borders */
     --small-margin: 8px; /* Small margin for spacing */
-    --button-background-color: #555; /* Dark gray for buttons */
+    --button-background-color: #ffd700; /* Gold for buttons */
 }
 
 
@@ -18,7 +18,7 @@ p, h1, h2, h3, div, a, span, button{
 }
 
 body{
-    background-color: var(--background-main-color);
+    background-color: var(--background-forth-color);
     width:100vw;
     height: 100vh;
 }

@@ -29,6 +29,7 @@ input, button, textarea{
     width: 95%;
     font-size: 1.3em;
     margin: 1em;
+    background-color: var(--background-forth-color);
 }
 
 button{

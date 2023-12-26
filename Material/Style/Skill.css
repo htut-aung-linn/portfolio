@@ -15,12 +15,12 @@ h1{
     padding: 0.5em;
     margin: 0.7em;
     width: 100%;
-    background-color: var(--background-third-color);
+    background-color: var(--background-second-color);
     border-radius: 1vw;
 }
 
 .description{
-    background-color: var(--background-forth-color);
+    background-color: var(--background-third-color);
     padding: 1.5em;
     border-radius: 1em;
 }

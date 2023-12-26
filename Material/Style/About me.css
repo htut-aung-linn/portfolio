@@ -5,6 +5,10 @@
     height: fit-content;
     padding: 2em;
 }
+
+#content:hover{
+    background-color:   var(--background-second-color);
+}
 #main{
     display: flex;
     flex-direction: row;
