@@ -1,16 +1,17 @@
 :root {
-    --background-main-color: #ffffff; /* White background */
-    --background-second-color: #228B22; /* Forest green background */
-    --background-third-color: #FF0000; /* Red background */
-    --background-forth-color: #ffd700; /* Gold background */
-    --main-font-color: #333333; /* Dark gray for main text */
-    --hover-color: #b22222; /* Firebrick for hover effects */
-    --havor-second-color: #8b0000; /* Dark red */
+    --background-main-color: #1a1a1a; /* Dark background */
+    --background-second-color: #2b2b2b; /* Slightly lighter background */
+    --background-third-color: #3c3c3c; /* Another shade of gray */
+    --background-forth-color: #4d4d4d; /* Yet another shade of gray */
+    --main-font-color: #ffffff; /* White for main text */
+    --hover-color: #ff69b4; /* Hot pink for hover effects */
+    --havor-second-color: #ff1493; /* Deep pink */
     --font-size: 16px; /* Slightly larger font size for readability */
-    --border-color: #228B22; /* Forest green for borders */
+    --border-color: #666; /* Medium gray for borders */
     --small-margin: 8px; /* Small margin for spacing */
-    --button-background-color: #ffd700; /* Gold for buttons */
+    --button-background-color: #008080; /* Teal for buttons */
 }
+
 
 
 p, h1, h2, h3, div, a, span, button{
