@@ -19,7 +19,7 @@ p, h1, h2, h3, div, a, span, button{
 }
 
 body{
-    background-color: var(--background-forth-color);
+    background-color: var(--background-main-color);
     width:100vw;
     height: 100vh;
 }

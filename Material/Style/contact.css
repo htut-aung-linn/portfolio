@@ -33,7 +33,7 @@ input, button, textarea{
 }
 
 button{
-    background-color: var(--button-background-color);
+    background-color: var(--havor-second-color);
     border: solid 2px var(--background-second-color);
     padding: 0.2em;
 }
