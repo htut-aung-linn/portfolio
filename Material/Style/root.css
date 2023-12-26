@@ -1,0 +1,24 @@
+:root {
+    --background-main-color: #111; /* Very dark gray for background */
+    --background-second-color: #222; /* Dark gray */
+    --background-third-color: #333; /* Slightly lighter gray */
+    --background-forth-color: #444; /* Lighter gray */
+    --main-font-color: #eee; /* Light gray for main text */
+    --hover-color: #ff4444; /* Dark red for hover effects */
+    --havor-second-color: #cc0000; /* Slightly lighter red */
+    --font-size: 16px; /* Slightly larger font size for readability */
+    --border-color: #666; /* Medium gray for borders */
+    --small-margin: 8px; /* Small margin for spacing */
+    --button-background-color: #555; /* Dark gray for buttons */
+}
+
+
+p, h1, h2, h3, div, a, span, button{
+    color: var(--main-font-color);
+}
+
+body{
+    background-color: var(--background-main-color);
+    width:100vw;
+    height: 100vh;
+}

@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="Material/Style/root.css" rel="stylesheet">
+    <link href="Material/Style/nav.css" rel="stylesheet">
+    <link href="Material/Style/contact.css" rel="stylesheet">
+    <title>To Contact</title>
 </head>
 <body>
     <div id="nav">
-        <a href="portfolio.html" class="nave active"><div>About me</div></a>
-        <a href="project.html" class="nave"><div>Project</div></a>
-        <a href="skill.html" class="nave"><div>Skill</div></a>
-        <a href="#" class="nave"><div>To Contact</div></a> 
+        <h3 id="header">Mega H</h3>
+        <div id="link">
+            <a href="portfolio.html" class="nave"><div>About me</div></a>
+            <a href="project.html" class="nave"><div>Project</div></a>
+            <a href="skill.html" class="nave"><div>Skill</div></a>
+            <a href="#" class="nave active"><div>To Contact</div></a>
+        </div>
     </div>
     <div id="main">
         <div id="contact">
@@ -26,12 +32,14 @@
             </div>
         </div>
         <div id="message">
+            <script src="portfolio.js"></script>
             <p>You can left your message in <span>chat with Htut</span> Section.</p>
             <h2>Chat with Htut</h2>
-            <input type="text" id="name" placeholder="Your name">
-            <input type="tel" id="phone" placeholder="Your phone no">
-            <textarea id="short-note" placeholder="Description" rows="4" cols="50"></textarea>
-            <button disabled>Send</button>
+            <input type="text" id="name" placeholder="Your name" value="">
+            <input type="tel" id="phone" placeholder="Your phone no" value="">
+            <textarea id="short-note" placeholder="Description" rows="4" cols="50" value=""></textarea>
+            <button onclick="SendMessage()" id="send">Send</button>
+            <p id="warning"></p>
         </div>
     </div>
 </body>

@@ -1,0 +1,26 @@
+img{
+    max-width: 25vw;
+    border-radius: 0em;
+}
+
+h1{
+    text-align: center;
+}
+
+.skill{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em;
+    margin: 0.7em;
+    width: 100%;
+    background-color: var(--background-third-color);
+    border-radius: 1vw;
+}
+
+.description{
+    background-color: var(--background-forth-color);
+    padding: 1.5em;
+    border-radius: 1em;
+}

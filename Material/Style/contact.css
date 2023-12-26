@@ -1,0 +1,44 @@
+#main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em;
+}
+
+#contact{
+    padding: 1em;
+    background-color: var(--background-second-color);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+#message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-second-color);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+input, button, textarea{
+    width: 95%;
+    font-size: 1.3em;
+    margin: 1em;
+}
+
+button{
+    background-color: var(--button-background-color);
+    border: solid 2px var(--background-second-color);
+    padding: 0.2em;
+}
+
+button:hover{
+    border: solid 2px var(--hover-color);
+    background-color: var(--background-second-color);
+
+}
