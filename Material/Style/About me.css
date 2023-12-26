@@ -19,5 +19,10 @@
 p{
     margin: var(--small-magin);
 }
+img{
+    max-width: 0.5in;
+    border-radius: 50%;
+    margin: 1em;
+}
 
 
