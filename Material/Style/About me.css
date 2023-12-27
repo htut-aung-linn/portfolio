@@ -4,6 +4,8 @@
     align-items: center;
     height: fit-content;
     padding: 2em;
+    border-radius: 1em;
+    border: 2px solid var(--background-second-color);
 }
 
 #content:hover{
@@ -15,6 +17,7 @@
     align-items: center;
     height: 80%;
     z-index: -1;
+    margin-top: 1em;
 }
 p{
     margin: var(--small-magin);
@@ -23,6 +26,12 @@ img{
     max-width: 0.5in;
     border-radius: 50%;
     margin: 1em;
+}
+
+@media only screen and (max-width:7in) {
+    #main{
+        justify-content: center;
+    }
 }
 
 

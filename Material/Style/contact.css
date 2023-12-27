@@ -12,6 +12,8 @@
     margin: 1em;
     padding: 1em;
     border-radius: 1em;
+    border: 2px solid var(--hover-color);
+
 }
 
 #message{
@@ -23,6 +25,8 @@
     margin: 1em;
     padding: 1em;
     border-radius: 1em;
+    border: 2px solid var(--hover-color);
+
 }
 
 input, button, textarea{
@@ -32,14 +36,42 @@ input, button, textarea{
     background-color: var(--background-forth-color);
 }
 
+input, textarea{
+    padding: 0.3em;
+    border-radius: 0.5em;
+    border-color: var(--hover-color);
+}
+
 button{
-    background-color: var(--havor-second-color);
-    border: solid 2px var(--background-second-color);
+    border: solid 2px var(--hover-color);
+    background-color: var(--background-second-color);
     padding: 0.2em;
 }
 
 button:hover{
-    border: solid 2px var(--hover-color);
-    background-color: var(--background-second-color);
+    background-color: var(--havor-second-color);
+    border: solid 2px var(--background-second-color);
+}
 
+.hint{
+    font-size: 1.2em;
+    color: var(--hover-color);
+    border: 1px double var(--main-font-color);
+    padding: 0.1em;
+    margin: 0.1em;
+}
+
+.hint:hover{
+    background-color: var(--havor-second-color);
+    color:var(--background-second-color)
+}
+
+@media only screen and (max-width:7in) {
+    #main{
+        flex-direction: column;
+    }
+}
+
+a{
+    text-decoration: none;
 }
