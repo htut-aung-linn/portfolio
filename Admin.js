@@ -18,6 +18,7 @@ function getall(){
         }
         console.log(typeof(text));
         document.getElementById('container').innerHTML = text;
+        uichangeforget();
     };
     xhttp.open("GET", "adminReq.php?f=all", true);
     xhttp.send(); 
@@ -38,6 +39,7 @@ function getunseen(){
         }
         console.log(typeof(text));
         document.getElementById('container').innerHTML = text;
+        uichangeforget();
     };
     xhttp.open("GET", "adminReq.php?f=us", true);
     xhttp.send(); 
@@ -58,6 +60,7 @@ function getdone(){
         }
         console.log(typeof(text));
         document.getElementById('container').innerHTML = text;
+        uichangeforget();
     };
     xhttp.open("GET", "adminReq.php?f=d", true);
     xhttp.send();
@@ -77,8 +80,9 @@ function getprogress(){
             text +=array_to_message(a[i]);
         }
         }
-        console.log(typeof(text));
+        //console.log(typeof(text));
         document.getElementById('container').innerHTML = text;
+        uichangeforget();
     };
     xhttp.open("GET", "adminReq.php?f=pro", true);
     xhttp.send();
@@ -94,7 +98,7 @@ function array_to_message(array){
     const string = '<div class="message '+array[3]+'">'+
     '<h3>Name: '+array[0]+'</h3>'+
     '<p>Message: '+array[2]+'</p>'+
-    '<a>To Contact: '+array[1]+'</a>'+
+    '<a href="tel:'+array[1]+'">To Contact: '+array[1]+'</a>'+
     '<div class="button">'+btn+
         '<button onclick="deldo('+array[4]+')">Delete</button>'+
     '</div>'+
@@ -161,4 +165,36 @@ function refresh(){
         getprogress();
     }
 }
+
+function uichangeforget(){
+    var all= document.getElementById('all');
+    var unseen= document.getElementById('unseen');
+    var progress= document.getElementById('progress');
+    var done= document.getElementById('done');
+    if(all.classList.contains('active')){
+        all.classList.remove('active');
+    }
+    if(unseen.classList.contains('active')){
+        unseen.classList.remove('active');
+    }
+    if(progress.classList.contains('active')){
+        progress.classList.remove('active');
+    }
+    if(done.classList.contains('active')){
+        done.classList.remove('active');
+    }
+    if(getstate==="All"){
+        all.classList.add('active');
+    }else if(getstate==="Unseen"){
+        unseen.classList.add('active');
+    }else if(getstate==="Done"){
+        done.classList.add('active');
+    }else{
+        progress.classList.add('active');
+    }
+    if(document.getElementById("container").innerHTML===""){
+        document.getElementById("container").innerHTML = "No message available."
+    }
+} 
 //ALTER TABLE `message` ADD `No` INT NOT NULL AUTO_INCREMENT AFTER `State`, ADD PRIMARY KEY (`No`);
+getprogress();

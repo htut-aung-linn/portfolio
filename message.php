@@ -11,7 +11,7 @@ if(isset($_SESSION['n'])){
         $_SESSION['p'] = $phone;
         $_SESSION['d'] = $description;
 
-        $sql = "INSERT INTO `message`(`Name`, `Phone`, `ShortNote`, `State`) VALUES ('$name','$phone','$description','S')";
+        $sql = "INSERT INTO `message`(`Name`, `Phone`, `ShortNote`, `State`,`No`) VALUES ('$name','$phone','$description','S',DEFAULT)";
         if (!mysqli_query($conn, $sql)) {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
@@ -24,7 +24,7 @@ if(isset($_SESSION['n'])){
     $_SESSION['p'] = $phone;
     $_SESSION['d'] = $description;
 
-    $sql = "INSERT INTO `message`(`Name`, `Phone`, `ShortNote`, `State`) VALUES ('$name','$phone','$description',DEFAULT)";
+    $sql = "INSERT INTO `message`(`Name`, `Phone`, `ShortNote`, `State`,`No`) VALUES ('$name','$phone','$description',DEFAULT,DEFAULT)";
     if (!mysqli_query($conn, $sql)) {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }

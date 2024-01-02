@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Material/Style/admin.css" rel="stylesheet">
     <title>Admin</title>
 </head>
 <body> 
@@ -12,33 +13,18 @@
         <h1>Mega H</h1>
         <nav>
             <ul>
-                <li onclick="getall()">All</li>
-                <li onclick="getunseen()">Unseen</li>
-                <li onclick="getprogress()">In Progress</li>
-                <li onclick="getdone()">Done</li>
+                <li id="all" onclick="getall()">All</li>
+                <li id="unseen" onclick="getunseen()">Unseen</li>
+                <li id="progress" onclick="getprogress()">In Progress</li>
+                <li id="done" onclick="getdone()">Done</li>
             </ul>
         </nav>
         <div id="container">
-            <div class="message">
-                <h3>Name</h3>
-                <p>Content: Hello I am a man.</p>
-                <a>To Contact: </a>
-                <div class="button">
-                    <button onclick="">Seen</button>
-                    <button>Done</button>
-                    <button>Delete</button>
-                </div>
-            </div>
+            
         </div>
     </div>
     <div id="popup">
-        <div>
-            Do you want to delete this message?
-        </div>
-        <div class="button">
-            <button onclick="Del()">Delete</button>
-            <button onclick="cancle()">Cancle</button>
-        </div>
+        
     </div>
 </body>
 </html>
