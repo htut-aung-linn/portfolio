@@ -13,8 +13,9 @@
         <nav>
             <ul>
                 <li onclick="getall()">All</li>
-                <li>In progress</li>
-                <li>Done</li>
+                <li onclick="getunseen()">Unseen</li>
+                <li onclick="getprogress()">In Progress</li>
+                <li onclick="getdone()">Done</li>
             </ul>
         </nav>
         <div id="container">
@@ -31,7 +32,13 @@
         </div>
     </div>
     <div id="popup">
-    
+        <div>
+            Do you want to delete this message?
+        </div>
+        <div class="button">
+            <button onclick="Del()">Delete</button>
+            <button onclick="cancle()">Cancle</button>
+        </div>
     </div>
 </body>
 </html>
